@@ -1,1 +1,79 @@
-Hello
+
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<head>
+    <title>Gienka Katalog</title>
+    <!-- For-Mobile-Apps -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="gienka, gienka official, gienka katalog, gienka produk, gienka jogja" />
+        <meta name="description" content="Gienkaofficial.com adalah website resmi dari Gienka Aesthetic Jogja untuk pembelian produk Gienka secara Online." />
+    <!-- //For-Mobile-Apps -->
+
+    <!-- Style -->
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!-- //Style -->
+</head>
+<!-- //Head -->
+<!-- Body -->
+<body>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<div class="content">
+		<!---728x90--->
+
+		<div class="wrap">
+				<div class="grid">
+				<h1>Comingsoon</h1>
+				</div>
+		
+
+			<div class="container">
+					<div class="clear-loading spinner">
+						<span></span>
+					</div>
+			</div>
+				<div class="grid">
+					<h2><p id="demo"></p></h2>
+					<h3>We are Still Working on it.</h3>
+				
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+				</div>
+				<div class="clear"></div>
+
+		</div>
+
+    </div>
+<!---728x90--->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("December 18, 2021 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get todays date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + " days " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+<!---728x90--->
+</body>
+<!-- //Body -->
+</html>
